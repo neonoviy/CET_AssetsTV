@@ -1,0 +1,501 @@
+/* @override 
+	http://test1.local:8888/assets/components/assetstv/dropzone-assetstv.css
+	http://test1.local:8888/assets/components/CET_assetstv/dropzone-assetstv.css */
+
+#folder{
+	color: #bcb8b8;
+}
+
+input.textfield{
+	width: 100%;
+}
+
+.dropzone {
+  min-height: 300px;
+  border: 1px solid rgb(232, 232, 232);
+  background: #f9f9f9;
+  padding: 2px 2px;
+	height: 350px;
+  overflow: auto;
+}
+
+
+
+.dz-default.dz-message{
+	color: #bab7b7;
+	text-align: center;
+	margin-bottom: -15px;
+	height: 15px;
+	line-height: 15px;
+	display: none;
+}
+  
+.dz-preview{
+	min-width: 136px;
+	display: inline-block;
+	overflow: hidden;
+	margin: 5px;
+	vertical-align: top;
+	background-color: rgba(248, 249, 248, 0.82);
+}
+
+
+.dz-image{
+	width: 136px;
+	height: 136px;
+	overflow: hidden;
+	line-height: 136px;
+	display: block;
+	text-align: center;
+	background: #f9f9f9;
+	
+}
+
+.dz-image img{
+	vertical-align: middle;
+
+}
+
+.image .dz-image img{
+	vertical-align: middle;
+	max-height: 128px;
+	max-width: 128px;
+	box-shadow: 0 0 4px rgb(100, 95, 95);
+	display: inline-block;
+	
+
+/*chess bg*/
+	background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), -webkit-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), rgb(255, 255, 255);
+	background: -moz-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), -moz-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), rgb(255, 255, 255);
+	background: linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), rgb(255, 255, 255);
+	background-position: 0 0, 5px 5px;
+	-webkit-background-origin: padding-box;
+	background-origin: padding-box;
+	-webkit-background-clip: border-box;
+	background-clip: border-box;
+	-webkit-background-size: 10px 10px;
+	background-size: 10px 10px;
+}
+
+.image .extension{
+	display: none;
+}
+
+img.file-icon{
+	background-color: #c2bbbb;
+
+}
+
+.archive .dz-image img.file-icon{
+	background: url(img/archive-bg.png) #c99d2c;
+}
+
+.document .dz-image img.file-icon{
+	background: url(img/document-bg.png) #cbcbc3;
+}
+
+.audio .dz-image img.file-icon{
+	background: url(img/audio-bg.png) #e2c021;
+}
+
+.video .dz-image img.file-icon{
+	background: url(img/video-bg.png) #48565b;
+}
+
+.pdf .dz-image img.file-icon{
+	background: url(img/pdf-bg.png) #802b0c;
+}
+
+.extension{
+	display: block;
+	position: relative;
+	margin-top: -70px;
+	font-weight: bold;
+	border-radius: 3px;
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #b4b09e;
+	float: left;
+	margin-left: 25px;
+	box-shadow: 0 0 1px rgba(32, 32, 32, 0.47);
+}
+
+/* @group extensions */
+
+.docx, .doc, .odf{
+	background-color: #028ff6;
+}
+
+.xlsx, .xls, .ods{
+	background-color: #0da915;
+}
+
+.ppt, .pptx{
+	background-color: #f3a703;
+}
+
+.psd{
+	background-color: #0b1cb6;
+}
+
+.ai{
+	background-color: #e98b01;
+}
+
+.indd{
+	background-color: #870882;
+}
+
+.extension.pdf{
+	background-color: #cb0303;
+}
+
+.rar, .zip, .7z, .gz, .archive {
+	background-color: #bf6b1b;
+}
+
+.mp3, .wma, .acc, .wav, .ogg{
+	background-color: #de9d14;
+}
+
+.mp4, .avi, .mkv, .web, .wmv{
+	background-color: #1d1f27;
+}
+
+/* @end */
+
+.dz-details{
+	padding-top: 3px;
+	width: 136px;
+}
+
+.dz-filename span{
+	width: 136px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	position: relative;
+	background-color: #dad2d2;
+}
+
+
+.dz-size{
+	font-size: 10px;
+	color: #7d7c7c;
+	padding-left: 2px;
+}
+
+
+
+.dz-error-message{
+	color: #b10202;
+	width: 136px;
+}
+
+.dz-error input.alt, .dz-error textarea{
+	display: none;
+}
+
+.dz-error img, .dz-error .extension, .dz-error input{
+	opacity: 0.5;
+}
+
+/* @group small right top icons and progress */
+
+.dz-preview .icons{
+	width: 20px;
+	display: block;
+	position: relative;
+	float: right;
+	margin-bottom: -440px;
+}
+
+
+.dz-preview .icons .delete, .dz-preview .icons .link_to_file, .dz-preview .icons .insert_with_tmb{
+	width: 20px;
+	height: 20px;
+	opacity: 0;
+	border-radius: 10px;
+	position: relative;
+	z-index: 999;
+	padding: 0;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.dz-preview .icons .delete{
+	background: url(img/delete.png) center center no-repeat #ae0808;
+	cursor: pointer;
+}
+
+.dz-preview .icons .delete:hover{
+	background-color: #d40505;
+}
+
+.dz-preview .icons .link_to_file{
+	background: url(img/link.png) center center no-repeat #3697cc;
+}
+
+.dz-preview .icons .link_to_file:hover{
+	background-color: #64acd3;
+}
+
+.dz-preview .icons .insert_with_tmb{
+	background: url(img/tmb.png) center center no-repeat #3697cc;
+}
+
+.dz-preview .icons .insert_with_tmb:hover{
+	background-color: #64acd3;
+}
+
+.dz-preview .icons .link_to_file:active, .dz-preview .icons .insert_with_tmb:active{
+	background-color: #31ab9a;
+}
+
+.dz-error .icons .link_to_file, .dz-error .icons .insert_with_tmb{
+	display: none;
+}
+
+.dz-preview:hover .icons .delete, .dz-preview:hover .icons .link_to_file, .dz-preview:hover .icons .insert_with_tmb{
+opacity: 1;
+-webkit-transition: opacity 0.2s ease-in;
+-moz-transition: opacity 0.2s ease-in;
+-ms-transition: opacity 0.2s ease-in;
+-o-transition: opacity 0.2s ease-in;
+transition: opacity 0.2s ease-in;
+
+}
+
+.dz-preview .icons svg{
+	width: 12px;
+	height: 12px;
+	display: block;
+	padding: 4px;
+	fill: #FFF;
+}
+
+
+.dropzone .dz-preview.dz-success .dz-success-mark {
+opacity: 1;
+-webkit-transition: opacity 0.5s ease-in;
+-moz-transition: opacity 0.5s ease-in;
+-ms-transition: opacity 0.5s ease-in;
+-o-transition: opacity 0.5s ease-in;
+transition: opacity 0.5s ease-in;}
+.dropzone .dz-preview.dz-error .dz-error-mark {
+ opacity: 1;
+ -webkit-transition: opacity 0.5s ease-in;
+ -moz-transition: opacity 0.5s ease-in;
+ -ms-transition: opacity 0.5s ease-in;
+ -o-transition: opacity 0.5s ease-in;
+ transition: opacity 0.5s ease-in;
+ }
+  
+
+
+.dz-progress{
+
+	height: 20px;
+	opacity: 1;
+
+	pointer-events: none;
+	width: 20px;
+	-webkit-transform: scale(1);
+	overflow: hidden;
+	display: block;
+	margin-bottom: -20px;
+}
+
+.dz-upload{
+	height: 20px;
+	width: 20px;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	-webkit-transition: width 600ms ease-in-out;
+	-moz-transition: width 600ms ease-in-out;
+	-ms-transition: width 600ms ease-in-out;
+	-o-transition: width 600ms ease-in-out;
+	transition: width 600ms ease-in-out;
+	background: url(img/ok.png) center center no-repeat #04b51e;
+	overflow: hidden;
+	display: block;
+	border-radius: 10px;
+	top: 0;
+}
+
+.dropzone .dz-preview.dz-processing .dz-progress {
+
+	opacity: 1;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+	
+}
+.dropzone .dz-preview .dz-progress, .dropzone .dz-preview.dz-success .dz-progress {
+  opacity: 1;
+  -webkit-transition: opacity 0.1s ease-in;
+  -moz-transition: opacity 0.1s ease-in;
+  -ms-transition: opacity 0.1s ease-in;
+  -o-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in; }
+  
+  
+  .dz-success-mark, .dz-error-mark, .dz-progress{
+  	display: block;
+  	color: #ffffff;
+  	opacity: 0;
+  	width: 20px;
+  	font-size: 19px;
+  	border-radius: 10px;
+  	text-align: center;
+  	line-height: 19px;
+  	height: 20px;
+  	font-weight: bold;
+  	padding: 0;
+  }
+  
+   .dz-success-mark{
+   	z-index: 100;
+   	margin-bottom: -20px;
+   	position: relative;
+   }
+   
+  .dz-error-mark{
+ 
+  	z-index: 100;
+  	background: url(img/error.png) center center no-repeat #fd0b0b;
+  	margin-bottom: -20px;
+  	position: relative;
+  }
+
+/* @end */
+
+  
+  
+.dz-preview .additional  ::-webkit-input-placeholder {color: #e2e0df;}
+.dz-preview .additional  ::-moz-placeholder          {color:#e2e0df;}/* Firefox 19+ */
+.dz-preview .additional  :-moz-placeholder           {color:#e2e0df;}/* Firefox 18- */
+.dz-preview .additional  :-ms-input-placeholder      {color:#e2e0df;}
+
+.dz-preview .additional input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.dz-preview .additional input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.dz-preview .additional input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.dz-preview .additional input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.dz-preview .additional input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.dz-preview .additional input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.dz-preview .additional input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.dz-preview .additional input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.dz-preview .additional textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.dz-preview .additional textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.dz-preview .additional textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.dz-preview .additional textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.dz-preview .additional textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.dz-preview .additional textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.dz-preview .additional textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.dz-preview .additional textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.dz-preview:hover .additional  ::-webkit-input-placeholder {color: #adabaa;}
+.dz-preview:hover .additional  ::-moz-placeholder          {color:#adabaa;}/* Firefox 19+ */
+.dz-preview:hover .additional  :-moz-placeholder           {color:#adabaa;}/* Firefox 18- */
+.dz-preview:hover .additional  :-ms-input-placeholder      {color:#adabaa;}
+  
+  .dz-preview .additional{
+  	text-align: left;
+  }
+   
+  .dz-preview .additional .alt, .dz-preview .additional .description, .dz-preview .name{
+  	border: 1px solid #f8f9f8;
+  	background-color: #f8f9f8;
+	 	width: 128px;
+  	padding: 1px;
+  	border-radius: 3px;
+  }
+  
+  .dz-preview .name{
+  	font-size: 12px;
+ 
+  }
+  
+  .dz-preview:hover .additional .alt, .dz-preview:hover .additional .description{
+  	border: 1px solid #f0efef;
+  	background-color: #fcfcfc;
+  }
+  
+  .dz-preview .additional .alt:focus, .dz-preview .additional .description:focus{
+  	border: 1px solid #e7e8e7;
+  	background-color: #ffffff;
+  }
+ 
+ .dz-preview .additional{
+
+ }
+  
+.dz-preview .additional textarea{
+	height: 50px;
+}
+
+.dzchkfile{
+	position: relative;
+	top: 140px;
+}
+
+.dzlinks{
+	float: right;
+}
+
+.dzlinks span{
+	color: #3697cc;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	padding-right: 0;
+	margin-right: 10px;
+	margin-left: 0;
+	cursor: pointer;
+}
+
+.dzselectall{
+	margin-right: 10px;
+}
+
+.assetsTV-bottom-panel{
+    position: absolute;
+    right: 0;
+    width: 90%;
+    bottom: 00px;
+ 		z-index: 9992;
+    height: 20px;
+    box-shadow: 0px 0px 15px black;
+    background: white;
+/*	-webkit-transform-origin: 50% 100%;
+    -webkit-transform: scaleY(0.1);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;*/
+    -webkit-transition:height 0.2s;
+    transition:height 0.2s;
+    outline: 0;
+	left: 5%;
+	padding: 2px;
+}
+.assetsTV-bottom-panel:hover {
+    /*-webkit-transform: scaleY(1);*/
+  height: 320px;
+}  
+
+.assetsTV-bottom-panel .dropzone{
+	height: 300px;
+}
+
+.assetsTV-bottom-panel .dzlinks{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	background-color: #ffffff;
+	
+}
